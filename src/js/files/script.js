@@ -3,7 +3,7 @@ export function scripts() {
 	window.onload = function () {
 		document.addEventListener("click", documentActions);
 
-		// Actions (делегирование события click)========================
+		// Actions (делегирование события click)=================================================================================
 		function documentActions (e) {
 			const targetElement = e.target;
 			if(window.innerWidth > 768 && func.isMobile.any()) {
@@ -18,7 +18,7 @@ export function scripts() {
 	}
 }
 
-// Spollers=========================================================
+// Spollers===================================================================================================================
 
 const spollersArray = document.querySelectorAll('[data-spollers]');
 if (spollersArray.length > 0) {
@@ -192,4 +192,13 @@ let _slideToggle = (target, duration = 500) => {
 		return _slideUp(target, duration);
 	}
 }
-//==================================================================
+//БУРГЕР======================================================================================================================
+const iconMenu = document.querySelector('.icon-menu');
+if (iconMenu) {
+	const menuBody = document.querySelector('.menu__body');
+	iconMenu.addEventListener('click', function(e) {
+		document.body.classList.toggle('_lock');
+		iconMenu.classList.toggle('_active');
+		menuBody.classList.toggle('_active');
+	});
+}

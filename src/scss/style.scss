@@ -28,10 +28,6 @@ body._lock {
 	flex-direction: column;
 	&._loaded{
 	}
-	
-	@media (max-width: $md3+px) {
-		background-color: $greyColor;
-	}
 }
 
 ._container {
@@ -41,5 +37,10 @@ body._lock {
 }
 
 
+@import "forms";
+@import "ui";
+
+@import "popup";
 @import "header";
+@import "footer";
 @import "main";

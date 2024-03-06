@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    // url('../fonts/icons.ttf?shz7q2') format('truetype'),
-    url('../fonts/icons.woff?shz7q2') format('woff'),
-    url('../fonts/icons.svg?shz7q2#icons') format('svg');
+    // url('../fonts/icons.ttf?jxudv6') format('truetype'),
+    url('../fonts/icons.woff?jxudv6') format('woff'),
+    url('../fonts/icons.svg?jxudv6#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -30,4 +30,16 @@
 ._icon-twitter:before {
   content: "\e901";
   color: #03a9f4;
+}
+._icon-fb:before {
+  content: "\e902";
+  color: #c4c4c4;
+}
+._icon-site1:before {
+  content: "\e903";
+  color: #c4c4c4;
+}
+._icon-site2:before {
+  content: "\e904";
+  color: #c4c4c4;
 }
